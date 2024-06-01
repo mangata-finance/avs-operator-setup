@@ -36,7 +36,7 @@ Update the `TODO` sections in the  `.env` file given in the root directory of th
 ### Run Finalizer Operator
 Execute the following command to start the docker containers:
 ```
-docker compose up -d
+docker-compose up -d
 ```
 you can view the logs using:
 ```
@@ -44,7 +44,7 @@ docker logs -f <container_id>
 ```
 Tear down container
 ```bash
-docker compose down
+docker-compose down
 ```
 ### Opt-out into AVS
 ```bash
@@ -64,13 +64,13 @@ git pull
 **Step 2:** Pull the latest docker images
 
 ```
-docker compose pull
+docker-compose pull
 ```
 
 **Step 3:** Stop the existing services
 
 ```
-docker compose down
+docker-compose down
 ```
 
 **Step 4:** Start your services again
@@ -78,5 +78,5 @@ docker compose down
 If there are any specific instructions that needs to be followed for any upgrade, those instructions will be given with the release notes of the specific release. Please check the latest [release notes](https://github.com/mangata-finance/avs-operator-setup/releases) on Github and follow the instructions before starting the services again.
 
 ```
-docker compose up -d
+docker-compose up -d
 ```
